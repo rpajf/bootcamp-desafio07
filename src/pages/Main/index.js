@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
+
 import { bindActionCreators } from 'redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { formatPrice } from '../../util/format';
@@ -50,7 +51,6 @@ class Main extends Component {
 
     /* depois de conectar com redux(connect),
        Main tem acesso a prop dispatch.
-
     */
     addToCartRequest(id);
   };
@@ -96,8 +96,6 @@ const mapStateToProps = state => ({
   cada product vai ter uma quantidade que é
   acessada pelo reduce, incializando com um obj vazio,
   o amount de cada [product.id]
-
-
 */
 
 const mapDispatchToProps = dispatch =>

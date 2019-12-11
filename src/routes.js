@@ -4,11 +4,12 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Main from './pages/Main';
 import Cart from './pages/Cart';
 import Header from './components/Header';
+
 const Routes = createAppContainer(
   createStackNavigator(
     {
       Main,
-      Cart
+      Cart,
     },
     {
       defaultNavigationOptions: navigation => ({
